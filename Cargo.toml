@@ -1,0 +1,13 @@
+[package]
+name = "tor_cell_codec"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tor_cell_codec"
+crate-type = ["cdylib"]
+
+[dependencies]
+bytes = "1.4"
+pyo3 = { version = "0.18", features = ["extension-module"] }
+tor-cell = "0.26"
